@@ -1,0 +1,1171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4875B9FBD04ED829F60EF6 /* Pods_NFC_Connector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F584187948F9CEBB27C96863 /* Pods_NFC_Connector.framework */; };
+		A00FD05B239D1F4B00FE6C92 /* powerStatus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00FD05A239D1F4B00FE6C92 /* powerStatus.storyboard */; };
+		A00FD05E239D1F7600FE6C92 /* PowerStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00FD05D239D1F7600FE6C92 /* PowerStatusViewController.m */; };
+		A00FD060239D249700FE6C92 /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FD05F239D249700FE6C92 /* SwitchView.xib */; };
+		A00FD063239D267000FE6C92 /* powerSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A00FD062239D267000FE6C92 /* powerSettingView.m */; };
+		A01AF1C123630213005172DE /* ProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A01AF1C023630213005172DE /* ProgressCell.m */; };
+		A044CF8C23BB8FA600AF3F16 /* test.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A044CF8B23BB8FA600AF3F16 /* test.m4v */; };
+		A04B0577238AC01B0079FC1B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04B0576238AC01B0079FC1B /* MapViewController.m */; };
+		A0599F83232E4B19006EA8CB /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0599F82232E4B19006EA8CB /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A0599F86232E4B69006EA8CB /* NFCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0599F85232E4B69006EA8CB /* NFCHelper.m */; };
+		A0599F992330201D006EA8CB /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0599F982330201D006EA8CB /* Scanner.storyboard */; };
+		A0599F9C23302079006EA8CB /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0599F9B23302079006EA8CB /* ScannerViewController.m */; };
+		A06299D3238C76EA001789A8 /* MapMarkerWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06299D2238C76EA001789A8 /* MapMarkerWindowView.xib */; };
+		A06299D6238C7902001789A8 /* MapMarkerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A06299D5238C7902001789A8 /* MapMarkerWindow.m */; };
+		A068E3C42341217A00AE0147 /* RegisterUseCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A068E3C32341217A00AE0147 /* RegisterUseCycleViewController.m */; };
+		A06DAFD3233141C300E54D7F /* ApiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFD2233141C300E54D7F /* ApiUtil.m */; };
+		A06DAFF023314FFC00E54D7F /* VPProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFE723314FFC00E54D7F /* VPProgressHUD.m */; };
+		A06DAFF123314FFC00E54D7F /* ProgressHUDCustomIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFEC23314FFC00E54D7F /* ProgressHUDCustomIndicatorView.m */; };
+		A06DAFF323314FFC00E54D7F /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFEE23314FFC00E54D7F /* ProgressHUD.m */; };
+		A06DAFF423314FFC00E54D7F /* ProgressHUDTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFEF23314FFC00E54D7F /* ProgressHUDTransitionController.m */; };
+		A06DAFF72331525F00E54D7F /* ViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DAFF52331525F00E54D7F /* ViewControllerHelper.m */; };
+		A06E60C5232D4A8E00FC9A47 /* Medical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E60C4232D4A8E00FC9A47 /* Medical.storyboard */; };
+		A06E60C8232D4AB100FC9A47 /* MedicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60C7232D4AB100FC9A47 /* MedicalViewController.m */; };
+		A06E60CB232D4CFC00FC9A47 /* UseMedicalProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60CA232D4CFC00FC9A47 /* UseMedicalProductViewController.m */; };
+		A06E60D0232D762100FC9A47 /* Measurement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E60CF232D762100FC9A47 /* Measurement.storyboard */; };
+		A06E60D3232D765D00FC9A47 /* MeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60D2232D765D00FC9A47 /* MeasurementViewController.m */; };
+		A06E60D6232D769700FC9A47 /* UseMeasurementProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60D5232D769700FC9A47 /* UseMeasurementProductViewController.m */; };
+		A06E60DB232D79C800FC9A47 /* Miltary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E60DA232D79C800FC9A47 /* Miltary.storyboard */; };
+		A06E60DE232D79F200FC9A47 /* MiltaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60DD232D79F200FC9A47 /* MiltaryViewController.m */; };
+		A06E60E1232D7A1A00FC9A47 /* UseMiltaryProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60E0232D7A1A00FC9A47 /* UseMiltaryProductViewController.m */; };
+		A06E60E6232D7BF700FC9A47 /* Industry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E60E5232D7BF700FC9A47 /* Industry.storyboard */; };
+		A06E60E9232D7E4000FC9A47 /* IndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60E8232D7E4000FC9A47 /* IndustryViewController.m */; };
+		A06E60EC232D7E6D00FC9A47 /* UseIndustryProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60EB232D7E6D00FC9A47 /* UseIndustryProductViewController.m */; };
+		A06E60EF232D85A300FC9A47 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60EE232D85A300FC9A47 /* HomeViewController.m */; };
+		A06E60F2232D85C300FC9A47 /* UseProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E60F1232D85C300FC9A47 /* UseProduct.m */; };
+		A0789FC02332D34200A7EE73 /* Cycle.m in Sources */ = {isa = PBXBuildFile; fileRef = A0789FBF2332D34200A7EE73 /* Cycle.m */; };
+		A079FB67232C13F40076201E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A079FB66232C13F40076201E /* AppDelegate.m */; };
+		A079FB6F232C13F50076201E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A079FB6E232C13F50076201E /* Assets.xcassets */; };
+		A079FB72232C13F50076201E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079FB70232C13F50076201E /* LaunchScreen.storyboard */; };
+		A079FB75232C13F50076201E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A079FB74232C13F50076201E /* main.m */; };
+		A079FB82232C15700076201E /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A079FB81232C15700076201E /* SplashViewController.m */; };
+		A079FB84232C158C0076201E /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079FB83232C158C0076201E /* Splash.storyboard */; };
+		A079FB8A232C4CAD0076201E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A079FB89232C4CAD0076201E /* StartViewController.m */; };
+		A079FB8C232C4CC40076201E /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079FB8B232C4CC40076201E /* Start.storyboard */; };
+		A08699B5233D587000929E21 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = A08699B4233D587000929E21 /* Location.m */; };
+		A0899FF023EC35D700D3A1B3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0899FEF23EC35D700D3A1B3 /* TabBar.storyboard */; };
+		A0899FF423EC361400D3A1B3 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0899FF323EC361400D3A1B3 /* TabBarView.xib */; };
+		A0899FF723EC3B4C00D3A1B3 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0899FF623EC3B4C00D3A1B3 /* TabBarView.m */; };
+		A0899FFA23EC3BDF00D3A1B3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0899FF923EC3BDF00D3A1B3 /* TabBarController.m */; };
+		A0BA563923B004070091EF7C /* Z_OBJC_Wrapper_AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA563823B004070091EF7C /* Z_OBJC_Wrapper_AnimationView.swift */; };
+		A0C07338247420D300960725 /* FullScreenSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C07337247420D300960725 /* FullScreenSegue.m */; };
+		A0CC594823340D37003E2BC5 /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CC594723340D37003E2BC5 /* AlertUtil.m */; };
+		A0CC594B23341173003E2BC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0CC594D23341173003E2BC5 /* Localizable.strings */; };
+		A0CC59552334179C003E2BC5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CC59542334179C003E2BC5 /* WebViewController.m */; };
+		A0CC595723341A42003E2BC5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CC595623341A42003E2BC5 /* WebKit.framework */; };
+		A0CC595C23342D57003E2BC5 /* ProductData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CC595B23342D57003E2BC5 /* ProductData.storyboard */; };
+		A0CC595F23342D73003E2BC5 /* ShowProductDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CC595E23342D73003E2BC5 /* ShowProductDataViewController.m */; };
+		A0CC596423343120003E2BC5 /* DataRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CC596223343120003E2BC5 /* DataRow.m */; };
+		A0CC596523343120003E2BC5 /* DataRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CC596323343120003E2BC5 /* DataRow.xib */; };
+		A0DC01B323883C4C0093C115 /* AdminStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DC01B223883C4C0093C115 /* AdminStartViewController.m */; };
+		A0DC01B523883C830093C115 /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC01B423883C830093C115 /* AdminDashboard.storyboard */; };
+		A0DC01BC2388A02D0093C115 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DC01BB2388A02D0093C115 /* Util.m */; };
+		A0DC01C12389B7EC0093C115 /* HistoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC01C02389B7EC0093C115 /* HistoryStoryboard.storyboard */; };
+		A0DC01C42389B8160093C115 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DC01C32389B8160093C115 /* HistoryViewController.m */; };
+		A0DC01C82389BF650093C115 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DC01C72389BF650093C115 /* HistoryTableViewCell.m */; };
+		A0DC01CB2389D7B40093C115 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DC01CA2389D7B40093C115 /* HistoryDetailViewController.m */; };
+		A0EE53F3235F441F0039AE45 /* SuccessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE53F2235F441F0039AE45 /* SuccessCell.m */; };
+		A0EE53F6235F675D0039AE45 /* OrderWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE53F5235F675D0039AE45 /* OrderWebViewController.m */; };
+		A0FB58902337E43D00BF1693 /* ShowConnectorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FB588F2337E43D00BF1693 /* ShowConnectorDataViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		653850B1D44F10BC3C1F3B3A /* Pods-NFC Connector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFC Connector.release.xcconfig"; path = "Target Support Files/Pods-NFC Connector/Pods-NFC Connector.release.xcconfig"; sourceTree = "<group>"; };
+		71F3DAD692EC03F034FB93AC /* Pods-NFC Connector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFC Connector.debug.xcconfig"; path = "Target Support Files/Pods-NFC Connector/Pods-NFC Connector.debug.xcconfig"; sourceTree = "<group>"; };
+		A00FD05A239D1F4B00FE6C92 /* powerStatus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = powerStatus.storyboard; sourceTree = "<group>"; };
+		A00FD05C239D1F7600FE6C92 /* PowerStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerStatusViewController.h; sourceTree = "<group>"; };
+		A00FD05D239D1F7600FE6C92 /* PowerStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerStatusViewController.m; sourceTree = "<group>"; };
+		A00FD05F239D249700FE6C92 /* SwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
+		A00FD061239D267000FE6C92 /* powerSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = powerSettingView.h; sourceTree = "<group>"; };
+		A00FD062239D267000FE6C92 /* powerSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = powerSettingView.m; sourceTree = "<group>"; };
+		A01AF1BF23630213005172DE /* ProgressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCell.h; sourceTree = "<group>"; };
+		A01AF1C023630213005172DE /* ProgressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCell.m; sourceTree = "<group>"; };
+		A044CF8B23BB8FA600AF3F16 /* test.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4v; sourceTree = "<group>"; };
+		A04B0575238AC01B0079FC1B /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A04B0576238AC01B0079FC1B /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A0599F82232E4B19006EA8CB /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		A0599F84232E4B69006EA8CB /* NFCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCHelper.h; sourceTree = "<group>"; };
+		A0599F85232E4B69006EA8CB /* NFCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCHelper.m; sourceTree = "<group>"; };
+		A0599F87232E5EFF006EA8CB /* NFC Connector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NFC Connector.entitlements"; sourceTree = "<group>"; };
+		A0599F982330201D006EA8CB /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		A0599F9A23302079006EA8CB /* ScannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		A0599F9B23302079006EA8CB /* ScannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		A06299D2238C76EA001789A8 /* MapMarkerWindowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapMarkerWindowView.xib; sourceTree = "<group>"; };
+		A06299D4238C7902001789A8 /* MapMarkerWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapMarkerWindow.h; sourceTree = "<group>"; };
+		A06299D5238C7902001789A8 /* MapMarkerWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapMarkerWindow.m; sourceTree = "<group>"; };
+		A068E3C1234110EE00AE0147 /* AppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDefines.h; sourceTree = "<group>"; };
+		A068E3C22341217A00AE0147 /* RegisterUseCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterUseCycleViewController.h; sourceTree = "<group>"; };
+		A068E3C32341217A00AE0147 /* RegisterUseCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterUseCycleViewController.m; sourceTree = "<group>"; };
+		A06DAFD1233141C300E54D7F /* ApiUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiUtil.h; sourceTree = "<group>"; };
+		A06DAFD2233141C300E54D7F /* ApiUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiUtil.m; sourceTree = "<group>"; };
+		A06DAFE623314FFC00E54D7F /* ProgressHUDCustomIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDCustomIndicatorView.h; sourceTree = "<group>"; };
+		A06DAFE723314FFC00E54D7F /* VPProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPProgressHUD.m; sourceTree = "<group>"; };
+		A06DAFE823314FFC00E54D7F /* ProgressHUDTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDTransitionController.h; sourceTree = "<group>"; };
+		A06DAFEA23314FFC00E54D7F /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		A06DAFEB23314FFC00E54D7F /* VPProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPProgressHUD.h; sourceTree = "<group>"; };
+		A06DAFEC23314FFC00E54D7F /* ProgressHUDCustomIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDCustomIndicatorView.m; sourceTree = "<group>"; };
+		A06DAFEE23314FFC00E54D7F /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		A06DAFEF23314FFC00E54D7F /* ProgressHUDTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDTransitionController.m; sourceTree = "<group>"; };
+		A06DAFF52331525F00E54D7F /* ViewControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHelper.m; sourceTree = "<group>"; };
+		A06DAFF62331525F00E54D7F /* ViewControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerHelper.h; sourceTree = "<group>"; };
+		A06E60C4232D4A8E00FC9A47 /* Medical.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Medical.storyboard; sourceTree = "<group>"; };
+		A06E60C6232D4AB100FC9A47 /* MedicalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicalViewController.h; sourceTree = "<group>"; };
+		A06E60C7232D4AB100FC9A47 /* MedicalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalViewController.m; sourceTree = "<group>"; };
+		A06E60C9232D4CFC00FC9A47 /* UseMedicalProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseMedicalProductViewController.h; sourceTree = "<group>"; };
+		A06E60CA232D4CFC00FC9A47 /* UseMedicalProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseMedicalProductViewController.m; sourceTree = "<group>"; };
+		A06E60CF232D762100FC9A47 /* Measurement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Measurement.storyboard; sourceTree = "<group>"; };
+		A06E60D1232D765D00FC9A47 /* MeasurementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasurementViewController.h; sourceTree = "<group>"; };
+		A06E60D2232D765D00FC9A47 /* MeasurementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasurementViewController.m; sourceTree = "<group>"; };
+		A06E60D4232D769700FC9A47 /* UseMeasurementProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseMeasurementProductViewController.h; sourceTree = "<group>"; };
+		A06E60D5232D769700FC9A47 /* UseMeasurementProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseMeasurementProductViewController.m; sourceTree = "<group>"; };
+		A06E60DA232D79C800FC9A47 /* Miltary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Miltary.storyboard; sourceTree = "<group>"; };
+		A06E60DC232D79F200FC9A47 /* MiltaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiltaryViewController.h; sourceTree = "<group>"; };
+		A06E60DD232D79F200FC9A47 /* MiltaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiltaryViewController.m; sourceTree = "<group>"; };
+		A06E60DF232D7A1A00FC9A47 /* UseMiltaryProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseMiltaryProductViewController.h; sourceTree = "<group>"; };
+		A06E60E0232D7A1A00FC9A47 /* UseMiltaryProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseMiltaryProductViewController.m; sourceTree = "<group>"; };
+		A06E60E5232D7BF700FC9A47 /* Industry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Industry.storyboard; sourceTree = "<group>"; };
+		A06E60E7232D7E4000FC9A47 /* IndustryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndustryViewController.h; sourceTree = "<group>"; };
+		A06E60E8232D7E4000FC9A47 /* IndustryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndustryViewController.m; sourceTree = "<group>"; };
+		A06E60EA232D7E6D00FC9A47 /* UseIndustryProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseIndustryProductViewController.h; sourceTree = "<group>"; };
+		A06E60EB232D7E6D00FC9A47 /* UseIndustryProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseIndustryProductViewController.m; sourceTree = "<group>"; };
+		A06E60ED232D85A300FC9A47 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A06E60EE232D85A300FC9A47 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A06E60F0232D85C300FC9A47 /* UseProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseProduct.h; sourceTree = "<group>"; };
+		A06E60F1232D85C300FC9A47 /* UseProduct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseProduct.m; sourceTree = "<group>"; };
+		A0789FBE2332D34200A7EE73 /* Cycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cycle.h; sourceTree = "<group>"; };
+		A0789FBF2332D34200A7EE73 /* Cycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cycle.m; sourceTree = "<group>"; };
+		A079FB62232C13F40076201E /* NFC Connector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFC Connector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079FB65232C13F40076201E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A079FB66232C13F40076201E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A079FB6E232C13F50076201E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A079FB71232C13F50076201E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A079FB73232C13F50076201E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A079FB74232C13F50076201E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A079FB80232C15700076201E /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		A079FB81232C15700076201E /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		A079FB83232C158C0076201E /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		A079FB88232C4CAD0076201E /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		A079FB89232C4CAD0076201E /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		A079FB8B232C4CC40076201E /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		A08699B3233D587000929E21 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		A08699B4233D587000929E21 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		A0899FEF23EC35D700D3A1B3 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		A0899FF323EC361400D3A1B3 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		A0899FF523EC3B4C00D3A1B3 /* TabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
+		A0899FF623EC3B4C00D3A1B3 /* TabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
+		A0899FF823EC3BDF00D3A1B3 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		A0899FF923EC3BDF00D3A1B3 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		A0BA563723B004070091EF7C /* NFC Connector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NFC Connector-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0BA563823B004070091EF7C /* Z_OBJC_Wrapper_AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z_OBJC_Wrapper_AnimationView.swift; sourceTree = "<group>"; };
+		A0C07336247420D300960725 /* FullScreenSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullScreenSegue.h; sourceTree = "<group>"; };
+		A0C07337247420D300960725 /* FullScreenSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullScreenSegue.m; sourceTree = "<group>"; };
+		A0CC594623340D37003E2BC5 /* AlertUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
+		A0CC594723340D37003E2BC5 /* AlertUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
+		A0CC594C23341173003E2BC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0CC59532334179C003E2BC5 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A0CC59542334179C003E2BC5 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		A0CC595623341A42003E2BC5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A0CC595B23342D57003E2BC5 /* ProductData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductData.storyboard; sourceTree = "<group>"; };
+		A0CC595D23342D73003E2BC5 /* ShowProductDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowProductDataViewController.h; sourceTree = "<group>"; };
+		A0CC595E23342D73003E2BC5 /* ShowProductDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowProductDataViewController.m; sourceTree = "<group>"; };
+		A0CC596123343120003E2BC5 /* DataRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRow.h; sourceTree = "<group>"; };
+		A0CC596223343120003E2BC5 /* DataRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataRow.m; sourceTree = "<group>"; };
+		A0CC596323343120003E2BC5 /* DataRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataRow.xib; sourceTree = "<group>"; };
+		A0DC01B123883C4C0093C115 /* AdminStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdminStartViewController.h; sourceTree = "<group>"; };
+		A0DC01B223883C4C0093C115 /* AdminStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdminStartViewController.m; sourceTree = "<group>"; };
+		A0DC01B423883C830093C115 /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
+		A0DC01BA2388A02D0093C115 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		A0DC01BB2388A02D0093C115 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		A0DC01C02389B7EC0093C115 /* HistoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryStoryboard.storyboard; sourceTree = "<group>"; };
+		A0DC01C22389B8160093C115 /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		A0DC01C32389B8160093C115 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		A0DC01C62389BF650093C115 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		A0DC01C72389BF650093C115 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		A0DC01C92389D7B40093C115 /* HistoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		A0DC01CA2389D7B40093C115 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		A0EE53F1235F441F0039AE45 /* SuccessCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessCell.h; sourceTree = "<group>"; };
+		A0EE53F2235F441F0039AE45 /* SuccessCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessCell.m; sourceTree = "<group>"; };
+		A0EE53F4235F675D0039AE45 /* OrderWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderWebViewController.h; sourceTree = "<group>"; };
+		A0EE53F5235F675D0039AE45 /* OrderWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderWebViewController.m; sourceTree = "<group>"; };
+		A0FB588E2337E43D00BF1693 /* ShowConnectorDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowConnectorDataViewController.h; sourceTree = "<group>"; };
+		A0FB588F2337E43D00BF1693 /* ShowConnectorDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowConnectorDataViewController.m; sourceTree = "<group>"; };
+		F584187948F9CEBB27C96863 /* Pods_NFC_Connector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFC_Connector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A079FB5F232C13F40076201E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CC595723341A42003E2BC5 /* WebKit.framework in Frameworks */,
+				A0599F83232E4B19006EA8CB /* CoreNFC.framework in Frameworks */,
+				1D4875B9FBD04ED829F60EF6 /* Pods_NFC_Connector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		795E1BF3801E7BF124828B18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71F3DAD692EC03F034FB93AC /* Pods-NFC Connector.debug.xcconfig */,
+				653850B1D44F10BC3C1F3B3A /* Pods-NFC Connector.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A00FD057239D1EDD00FE6C92 /* powerStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD058239D1F0100FE6C92 /* Story Board */,
+				A00FD059239D1F1400FE6C92 /* ViewControllers */,
+			);
+			path = powerStatus;
+			sourceTree = "<group>";
+		};
+		A00FD058239D1F0100FE6C92 /* Story Board */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD05A239D1F4B00FE6C92 /* powerStatus.storyboard */,
+			);
+			path = "Story Board";
+			sourceTree = "<group>";
+		};
+		A00FD059239D1F1400FE6C92 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD065239D2EFC00FE6C92 /* settingSwitch */,
+				A00FD05C239D1F7600FE6C92 /* PowerStatusViewController.h */,
+				A00FD05D239D1F7600FE6C92 /* PowerStatusViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A00FD065239D2EFC00FE6C92 /* settingSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD05F239D249700FE6C92 /* SwitchView.xib */,
+				A00FD061239D267000FE6C92 /* powerSettingView.h */,
+				A00FD062239D267000FE6C92 /* powerSettingView.m */,
+			);
+			path = settingSwitch;
+			sourceTree = "<group>";
+		};
+		A0599F80232E49F5006EA8CB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A06DAFE523314FFC00E54D7F /* VPProgressHUD */,
+				A06DAFD02331419900E54D7F /* Util */,
+				A0599F88232E6E87006EA8CB /* Model */,
+				A0599F81232E49FE006EA8CB /* NFC Helper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A0599F81232E49FE006EA8CB /* NFC Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A0599F84232E4B69006EA8CB /* NFCHelper.h */,
+				A0599F85232E4B69006EA8CB /* NFCHelper.m */,
+			);
+			path = "NFC Helper";
+			sourceTree = "<group>";
+		};
+		A0599F88232E6E87006EA8CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0789FBE2332D34200A7EE73 /* Cycle.h */,
+				A0789FBF2332D34200A7EE73 /* Cycle.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0599F9523301FE8006EA8CB /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				A0599F9723302004006EA8CB /* StoryBoard */,
+				A0599F9623301FF9006EA8CB /* ViewController */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		A0599F9623301FF9006EA8CB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC5960233430B8003E2BC5 /* Cells */,
+				A0599F9A23302079006EA8CB /* ScannerViewController.h */,
+				A0599F9B23302079006EA8CB /* ScannerViewController.m */,
+				A0CC59532334179C003E2BC5 /* WebViewController.h */,
+				A0CC59542334179C003E2BC5 /* WebViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0599F9723302004006EA8CB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A0599F982330201D006EA8CB /* Scanner.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A06DAFD02331419900E54D7F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A06DAFD1233141C300E54D7F /* ApiUtil.h */,
+				A06DAFD2233141C300E54D7F /* ApiUtil.m */,
+				A0CC594623340D37003E2BC5 /* AlertUtil.h */,
+				A0CC594723340D37003E2BC5 /* AlertUtil.m */,
+				A08699B3233D587000929E21 /* Location.h */,
+				A08699B4233D587000929E21 /* Location.m */,
+				A0DC01BA2388A02D0093C115 /* Util.h */,
+				A0DC01BB2388A02D0093C115 /* Util.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A06DAFE523314FFC00E54D7F /* VPProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A06DAFF62331525F00E54D7F /* ViewControllerHelper.h */,
+				A06DAFF52331525F00E54D7F /* ViewControllerHelper.m */,
+				A06DAFE623314FFC00E54D7F /* ProgressHUDCustomIndicatorView.h */,
+				A06DAFE723314FFC00E54D7F /* VPProgressHUD.m */,
+				A06DAFE823314FFC00E54D7F /* ProgressHUDTransitionController.h */,
+				A06DAFEA23314FFC00E54D7F /* ProgressHUD.h */,
+				A06DAFEB23314FFC00E54D7F /* VPProgressHUD.h */,
+				A06DAFEC23314FFC00E54D7F /* ProgressHUDCustomIndicatorView.m */,
+				A06DAFEE23314FFC00E54D7F /* ProgressHUD.m */,
+				A06DAFEF23314FFC00E54D7F /* ProgressHUDTransitionController.m */,
+			);
+			path = VPProgressHUD;
+			sourceTree = "<group>";
+		};
+		A06E60C1232D4A5000FC9A47 /* Medical */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60C3232D4A7500FC9A47 /* StoryBoard */,
+				A06E60C2232D4A6500FC9A47 /* ViewController */,
+			);
+			path = Medical;
+			sourceTree = "<group>";
+		};
+		A06E60C2232D4A6500FC9A47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60C6232D4AB100FC9A47 /* MedicalViewController.h */,
+				A06E60C7232D4AB100FC9A47 /* MedicalViewController.m */,
+				A06E60C9232D4CFC00FC9A47 /* UseMedicalProductViewController.h */,
+				A06E60CA232D4CFC00FC9A47 /* UseMedicalProductViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A06E60C3232D4A7500FC9A47 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60C4232D4A8E00FC9A47 /* Medical.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A06E60CC232D554C00FC9A47 /* Measurement */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60CE232D705900FC9A47 /* StoryBoard */,
+				A06E60CD232D704800FC9A47 /* ViewController */,
+			);
+			path = Measurement;
+			sourceTree = "<group>";
+		};
+		A06E60CD232D704800FC9A47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60D1232D765D00FC9A47 /* MeasurementViewController.h */,
+				A06E60D2232D765D00FC9A47 /* MeasurementViewController.m */,
+				A06E60D4232D769700FC9A47 /* UseMeasurementProductViewController.h */,
+				A06E60D5232D769700FC9A47 /* UseMeasurementProductViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A06E60CE232D705900FC9A47 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60CF232D762100FC9A47 /* Measurement.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A06E60D7232D791100FC9A47 /* Miltary */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60D9232D793500FC9A47 /* StoryBoard */,
+				A06E60D8232D792000FC9A47 /* ViewController */,
+			);
+			path = Miltary;
+			sourceTree = "<group>";
+		};
+		A06E60D8232D792000FC9A47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60DC232D79F200FC9A47 /* MiltaryViewController.h */,
+				A06E60DD232D79F200FC9A47 /* MiltaryViewController.m */,
+				A06E60DF232D7A1A00FC9A47 /* UseMiltaryProductViewController.h */,
+				A06E60E0232D7A1A00FC9A47 /* UseMiltaryProductViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A06E60D9232D793500FC9A47 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60DA232D79C800FC9A47 /* Miltary.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A06E60E2232D7BB100FC9A47 /* Industry */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60E4232D7BD900FC9A47 /* StoryBoard */,
+				A06E60E3232D7BC900FC9A47 /* ViewController */,
+			);
+			path = Industry;
+			sourceTree = "<group>";
+		};
+		A06E60E3232D7BC900FC9A47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60E7232D7E4000FC9A47 /* IndustryViewController.h */,
+				A06E60E8232D7E4000FC9A47 /* IndustryViewController.m */,
+				A06E60EA232D7E6D00FC9A47 /* UseIndustryProductViewController.h */,
+				A06E60EB232D7E6D00FC9A47 /* UseIndustryProductViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A06E60E4232D7BD900FC9A47 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A06E60E5232D7BF700FC9A47 /* Industry.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A079FB59232C13F40076201E = {
+			isa = PBXGroup;
+			children = (
+				A079FB64232C13F40076201E /* NFC Connector */,
+				A079FB63232C13F40076201E /* Products */,
+				795E1BF3801E7BF124828B18 /* Pods */,
+				A0D17B00B3FC543620862B0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A079FB63232C13F40076201E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB62232C13F40076201E /* NFC Connector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A079FB64232C13F40076201E /* NFC Connector */ = {
+			isa = PBXGroup;
+			children = (
+				A0599F87232E5EFF006EA8CB /* NFC Connector.entitlements */,
+				A0599F80232E49F5006EA8CB /* Helper */,
+				A079FB7C232C14380076201E /* Resources */,
+				A079FB7B232C140C0076201E /* Pages */,
+			);
+			path = "NFC Connector";
+			sourceTree = "<group>";
+		};
+		A079FB7B232C140C0076201E /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A0899FEE23EC35B300D3A1B3 /* TabBar */,
+				A00FD057239D1EDD00FE6C92 /* powerStatus */,
+				A0DC01AD23883BDB0093C115 /* Admin Section */,
+				A0CC595823342D0B003E2BC5 /* Show Product Data */,
+				A0599F9523301FE8006EA8CB /* Scanner */,
+				A06E60E2232D7BB100FC9A47 /* Industry */,
+				A06E60D7232D791100FC9A47 /* Miltary */,
+				A06E60CC232D554C00FC9A47 /* Measurement */,
+				A06E60C1232D4A5000FC9A47 /* Medical */,
+				A079FB7D232C14E10076201E /* Splash */,
+				A079FB85232C4C380076201E /* Start */,
+				A0C07336247420D300960725 /* FullScreenSegue.h */,
+				A0C07337247420D300960725 /* FullScreenSegue.m */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		A079FB7C232C14380076201E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB6E232C13F50076201E /* Assets.xcassets */,
+				A044CF8B23BB8FA600AF3F16 /* test.m4v */,
+				A079FB73232C13F50076201E /* Info.plist */,
+				A0CC594D23341173003E2BC5 /* Localizable.strings */,
+				A079FB70232C13F50076201E /* LaunchScreen.storyboard */,
+				A079FB65232C13F40076201E /* AppDelegate.h */,
+				A079FB66232C13F40076201E /* AppDelegate.m */,
+				A079FB74232C13F50076201E /* main.m */,
+				A068E3C1234110EE00AE0147 /* AppDefines.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A079FB7D232C14E10076201E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB7F232C15230076201E /* Storyboard */,
+				A079FB7E232C14F50076201E /* View Controller */,
+				A0BA563823B004070091EF7C /* Z_OBJC_Wrapper_AnimationView.swift */,
+				A0BA563723B004070091EF7C /* NFC Connector-Bridging-Header.h */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A079FB7E232C14F50076201E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB80232C15700076201E /* SplashViewController.h */,
+				A079FB81232C15700076201E /* SplashViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A079FB7F232C15230076201E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB83232C158C0076201E /* Splash.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A079FB85232C4C380076201E /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB87232C4C760076201E /* StoryBoard */,
+				A079FB86232C4C680076201E /* ViewController */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		A079FB86232C4C680076201E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB88232C4CAD0076201E /* StartViewController.h */,
+				A079FB89232C4CAD0076201E /* StartViewController.m */,
+				A06E60ED232D85A300FC9A47 /* HomeViewController.h */,
+				A06E60EE232D85A300FC9A47 /* HomeViewController.m */,
+				A06E60F0232D85C300FC9A47 /* UseProduct.h */,
+				A06E60F1232D85C300FC9A47 /* UseProduct.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A079FB87232C4C760076201E /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A079FB8B232C4CC40076201E /* Start.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A0899FEE23EC35B300D3A1B3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A0899FF223EC35ED00D3A1B3 /* View */,
+				A0899FEF23EC35D700D3A1B3 /* TabBar.storyboard */,
+				A0899FF823EC3BDF00D3A1B3 /* TabBarController.h */,
+				A0899FF923EC3BDF00D3A1B3 /* TabBarController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A0899FF223EC35ED00D3A1B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0899FF323EC361400D3A1B3 /* TabBarView.xib */,
+				A0899FF523EC3B4C00D3A1B3 /* TabBarView.h */,
+				A0899FF623EC3B4C00D3A1B3 /* TabBarView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0CC595823342D0B003E2BC5 /* Show Product Data */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC595A23342D32003E2BC5 /* Story Board */,
+				A0CC595923342D1E003E2BC5 /* ViewController */,
+			);
+			path = "Show Product Data";
+			sourceTree = "<group>";
+		};
+		A0CC595923342D1E003E2BC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0EE53F0235F43E50039AE45 /* TableCells */,
+				A0CC595D23342D73003E2BC5 /* ShowProductDataViewController.h */,
+				A0CC595E23342D73003E2BC5 /* ShowProductDataViewController.m */,
+				A0FB588E2337E43D00BF1693 /* ShowConnectorDataViewController.h */,
+				A0FB588F2337E43D00BF1693 /* ShowConnectorDataViewController.m */,
+				A068E3C22341217A00AE0147 /* RegisterUseCycleViewController.h */,
+				A068E3C32341217A00AE0147 /* RegisterUseCycleViewController.m */,
+				A0EE53F4235F675D0039AE45 /* OrderWebViewController.h */,
+				A0EE53F5235F675D0039AE45 /* OrderWebViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0CC595A23342D32003E2BC5 /* Story Board */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC595B23342D57003E2BC5 /* ProductData.storyboard */,
+			);
+			path = "Story Board";
+			sourceTree = "<group>";
+		};
+		A0CC5960233430B8003E2BC5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC596123343120003E2BC5 /* DataRow.h */,
+				A0CC596223343120003E2BC5 /* DataRow.m */,
+				A0CC596323343120003E2BC5 /* DataRow.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A0D17B00B3FC543620862B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC595623341A42003E2BC5 /* WebKit.framework */,
+				A0599F82232E4B19006EA8CB /* CoreNFC.framework */,
+				F584187948F9CEBB27C96863 /* Pods_NFC_Connector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0DC01AD23883BDB0093C115 /* Admin Section */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01BD2389B70F0093C115 /* History */,
+				A0DC01B023883C080093C115 /* Dashboard */,
+			);
+			path = "Admin Section";
+			sourceTree = "<group>";
+		};
+		A0DC01AE23883BF40093C115 /* Story Board */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01B423883C830093C115 /* AdminDashboard.storyboard */,
+				A06299D2238C76EA001789A8 /* MapMarkerWindowView.xib */,
+			);
+			path = "Story Board";
+			sourceTree = "<group>";
+		};
+		A0DC01AF23883BFC0093C115 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A06299D4238C7902001789A8 /* MapMarkerWindow.h */,
+				A06299D5238C7902001789A8 /* MapMarkerWindow.m */,
+				A0DC01B123883C4C0093C115 /* AdminStartViewController.h */,
+				A0DC01B223883C4C0093C115 /* AdminStartViewController.m */,
+				A04B0575238AC01B0079FC1B /* MapViewController.h */,
+				A04B0576238AC01B0079FC1B /* MapViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0DC01B023883C080093C115 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01AE23883BF40093C115 /* Story Board */,
+				A0DC01AF23883BFC0093C115 /* ViewController */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A0DC01BD2389B70F0093C115 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01BF2389B7300093C115 /* StoryBoard */,
+				A0DC01BE2389B71F0093C115 /* ViewControllers */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A0DC01BE2389B71F0093C115 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01C52389BF490093C115 /* cell */,
+				A0DC01C22389B8160093C115 /* HistoryViewController.h */,
+				A0DC01C32389B8160093C115 /* HistoryViewController.m */,
+				A0DC01C92389D7B40093C115 /* HistoryDetailViewController.h */,
+				A0DC01CA2389D7B40093C115 /* HistoryDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0DC01BF2389B7300093C115 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01C02389B7EC0093C115 /* HistoryStoryboard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A0DC01C52389BF490093C115 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC01C62389BF650093C115 /* HistoryTableViewCell.h */,
+				A0DC01C72389BF650093C115 /* HistoryTableViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A0EE53F0235F43E50039AE45 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				A0EE53F1235F441F0039AE45 /* SuccessCell.h */,
+				A0EE53F2235F441F0039AE45 /* SuccessCell.m */,
+				A01AF1BF23630213005172DE /* ProgressCell.h */,
+				A01AF1C023630213005172DE /* ProgressCell.m */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A079FB61232C13F40076201E /* NFC Connector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A079FB78232C13F50076201E /* Build configuration list for PBXNativeTarget "NFC Connector" */;
+			buildPhases = (
+				A6F5D0F21901B209BE704D43 /* [CP] Check Pods Manifest.lock */,
+				A079FB5E232C13F40076201E /* Sources */,
+				A079FB5F232C13F40076201E /* Frameworks */,
+				A079FB60232C13F40076201E /* Resources */,
+				49D012B87B3A3DF1B47A020C /* [CP] Copy Pods Resources */,
+				962BFBEFB094D83CE999342E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFC Connector";
+			productName = "NFC Connector";
+			productReference = A079FB62232C13F40076201E /* NFC Connector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A079FB5A232C13F40076201E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Auguris;
+				TargetAttributes = {
+					A079FB61232C13F40076201E = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1120;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A079FB5D232C13F40076201E /* Build configuration list for PBXProject "NFC Connector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A079FB59232C13F40076201E;
+			productRefGroup = A079FB63232C13F40076201E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A079FB61232C13F40076201E /* NFC Connector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A079FB60232C13F40076201E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0899FF023EC35D700D3A1B3 /* TabBar.storyboard in Resources */,
+				A0CC595C23342D57003E2BC5 /* ProductData.storyboard in Resources */,
+				A079FB72232C13F50076201E /* LaunchScreen.storyboard in Resources */,
+				A0CC596523343120003E2BC5 /* DataRow.xib in Resources */,
+				A06E60DB232D79C800FC9A47 /* Miltary.storyboard in Resources */,
+				A079FB6F232C13F50076201E /* Assets.xcassets in Resources */,
+				A0DC01B523883C830093C115 /* AdminDashboard.storyboard in Resources */,
+				A0DC01C12389B7EC0093C115 /* HistoryStoryboard.storyboard in Resources */,
+				A044CF8C23BB8FA600AF3F16 /* test.m4v in Resources */,
+				A0899FF423EC361400D3A1B3 /* TabBarView.xib in Resources */,
+				A079FB8C232C4CC40076201E /* Start.storyboard in Resources */,
+				A00FD060239D249700FE6C92 /* SwitchView.xib in Resources */,
+				A06E60E6232D7BF700FC9A47 /* Industry.storyboard in Resources */,
+				A0599F992330201D006EA8CB /* Scanner.storyboard in Resources */,
+				A06E60D0232D762100FC9A47 /* Measurement.storyboard in Resources */,
+				A06299D3238C76EA001789A8 /* MapMarkerWindowView.xib in Resources */,
+				A0CC594B23341173003E2BC5 /* Localizable.strings in Resources */,
+				A079FB84232C158C0076201E /* Splash.storyboard in Resources */,
+				A00FD05B239D1F4B00FE6C92 /* powerStatus.storyboard in Resources */,
+				A06E60C5232D4A8E00FC9A47 /* Medical.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49D012B87B3A3DF1B47A020C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962BFBEFB094D83CE999342E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFC Connector/Pods-NFC Connector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F5D0F21901B209BE704D43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFC Connector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A079FB5E232C13F40076201E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06E60E9232D7E4000FC9A47 /* IndustryViewController.m in Sources */,
+				A0EE53F3235F441F0039AE45 /* SuccessCell.m in Sources */,
+				A06E60F2232D85C300FC9A47 /* UseProduct.m in Sources */,
+				A06E60C8232D4AB100FC9A47 /* MedicalViewController.m in Sources */,
+				A06299D6238C7902001789A8 /* MapMarkerWindow.m in Sources */,
+				A00FD063239D267000FE6C92 /* powerSettingView.m in Sources */,
+				A06DAFF423314FFC00E54D7F /* ProgressHUDTransitionController.m in Sources */,
+				A0DC01BC2388A02D0093C115 /* Util.m in Sources */,
+				A0C07338247420D300960725 /* FullScreenSegue.m in Sources */,
+				A06DAFD3233141C300E54D7F /* ApiUtil.m in Sources */,
+				A0CC596423343120003E2BC5 /* DataRow.m in Sources */,
+				A0789FC02332D34200A7EE73 /* Cycle.m in Sources */,
+				A0FB58902337E43D00BF1693 /* ShowConnectorDataViewController.m in Sources */,
+				A0899FFA23EC3BDF00D3A1B3 /* TabBarController.m in Sources */,
+				A079FB75232C13F50076201E /* main.m in Sources */,
+				A0DC01C42389B8160093C115 /* HistoryViewController.m in Sources */,
+				A06DAFF023314FFC00E54D7F /* VPProgressHUD.m in Sources */,
+				A0DC01B323883C4C0093C115 /* AdminStartViewController.m in Sources */,
+				A06DAFF72331525F00E54D7F /* ViewControllerHelper.m in Sources */,
+				A0EE53F6235F675D0039AE45 /* OrderWebViewController.m in Sources */,
+				A0599F86232E4B69006EA8CB /* NFCHelper.m in Sources */,
+				A01AF1C123630213005172DE /* ProgressCell.m in Sources */,
+				A06DAFF323314FFC00E54D7F /* ProgressHUD.m in Sources */,
+				A06E60CB232D4CFC00FC9A47 /* UseMedicalProductViewController.m in Sources */,
+				A0CC594823340D37003E2BC5 /* AlertUtil.m in Sources */,
+				A00FD05E239D1F7600FE6C92 /* PowerStatusViewController.m in Sources */,
+				A0599F9C23302079006EA8CB /* ScannerViewController.m in Sources */,
+				A06E60DE232D79F200FC9A47 /* MiltaryViewController.m in Sources */,
+				A06E60D6232D769700FC9A47 /* UseMeasurementProductViewController.m in Sources */,
+				A06E60E1232D7A1A00FC9A47 /* UseMiltaryProductViewController.m in Sources */,
+				A06DAFF123314FFC00E54D7F /* ProgressHUDCustomIndicatorView.m in Sources */,
+				A068E3C42341217A00AE0147 /* RegisterUseCycleViewController.m in Sources */,
+				A0899FF723EC3B4C00D3A1B3 /* TabBarView.m in Sources */,
+				A079FB8A232C4CAD0076201E /* StartViewController.m in Sources */,
+				A06E60EC232D7E6D00FC9A47 /* UseIndustryProductViewController.m in Sources */,
+				A06E60D3232D765D00FC9A47 /* MeasurementViewController.m in Sources */,
+				A0CC59552334179C003E2BC5 /* WebViewController.m in Sources */,
+				A0BA563923B004070091EF7C /* Z_OBJC_Wrapper_AnimationView.swift in Sources */,
+				A0DC01C82389BF650093C115 /* HistoryTableViewCell.m in Sources */,
+				A079FB67232C13F40076201E /* AppDelegate.m in Sources */,
+				A04B0577238AC01B0079FC1B /* MapViewController.m in Sources */,
+				A079FB82232C15700076201E /* SplashViewController.m in Sources */,
+				A08699B5233D587000929E21 /* Location.m in Sources */,
+				A06E60EF232D85A300FC9A47 /* HomeViewController.m in Sources */,
+				A0DC01CB2389D7B40093C115 /* HistoryDetailViewController.m in Sources */,
+				A0CC595F23342D73003E2BC5 /* ShowProductDataViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A079FB70232C13F50076201E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A079FB71232C13F50076201E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A0CC594D23341173003E2BC5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CC594C23341173003E2BC5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A079FB76232C13F50076201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A079FB77232C13F50076201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A079FB79232C13F50076201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F3DAD692EC03F034FB93AC /* Pods-NFC Connector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "NFC Connector/NFC Connector.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = TPK3W9Q643;
+				INFOPLIST_FILE = "$(SRCROOT)/NFC Connector/Resources/Info.plist";
+				INSTALL_OWNER = "$(USER)";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.17;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auguris.NFC-Connector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NFC Connector/Pages/Splash/NFC Connector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A079FB7A232C13F50076201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653850B1D44F10BC3C1F3B3A /* Pods-NFC Connector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "NFC Connector/NFC Connector.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = TPK3W9Q643;
+				INFOPLIST_FILE = "$(SRCROOT)/NFC Connector/Resources/Info.plist";
+				INSTALL_OWNER = "$(USER)";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.17;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auguris.NFC-Connector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NFC Connector/Pages/Splash/NFC Connector-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A079FB5D232C13F40076201E /* Build configuration list for PBXProject "NFC Connector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079FB76232C13F50076201E /* Debug */,
+				A079FB77232C13F50076201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A079FB78232C13F50076201E /* Build configuration list for PBXNativeTarget "NFC Connector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079FB79232C13F50076201E /* Debug */,
+				A079FB7A232C13F50076201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A079FB5A232C13F40076201E /* Project object */;
+}

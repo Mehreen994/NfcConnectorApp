@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NFC Connector' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NFC Connector
+
+  pod 'VYNFCKit'
+  pod 'CBZSplashView', '~> 1.0.0'
+  pod 'JGProgressHUD', '2.0.3'
+  pod 'MBCircularProgressBar'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'HCLineChartView' # line chart
+  pod 'lottie-ios'
+ pod 'SwaggerClient', :path => '/Users/mehreen/Desktop/Work space/ODU APP/NFC @7.7.21/NFC Connector/NFC Connector/Vendor'
+  #pod 'AFNetworking', '~> 3.0', :subspecs => ['Reachability','NSURLSession']
+end
+ 

@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CBZSplashView (1.0.0)
+  - GoogleMaps (3.6.0):
+    - GoogleMaps/Maps (= 3.6.0)
+  - GoogleMaps/Base (3.6.0)
+  - GoogleMaps/Maps (3.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.6.0):
+    - GoogleMaps/Base (= 3.6.0)
+  - HCLineChartView (1.0.2)
+  - ISO8601 (0.6.0)
+  - JGProgressHUD (2.0.3)
+  - lottie-ios (3.1.5)
+  - MBCircularProgressBar (0.3.5)
+  - SwaggerClient (1.0.0):
+    - AFNetworking (~> 3)
+    - ISO8601 (~> 0.6)
+  - VYNFCKit (0.3.2)
+
+DEPENDENCIES:
+  - CBZSplashView (~> 1.0.0)
+  - GoogleMaps
+  - GooglePlaces
+  - HCLineChartView
+  - JGProgressHUD (= 2.0.3)
+  - lottie-ios
+  - MBCircularProgressBar
+  - "SwaggerClient (from `/Users/mehreen/Desktop/Work space/ODU APP/NFC @7.7.21/NFC Connector/NFC Connector/Vendor`)"
+  - VYNFCKit
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CBZSplashView
+    - GoogleMaps
+    - GooglePlaces
+    - HCLineChartView
+    - ISO8601
+    - JGProgressHUD
+    - lottie-ios
+    - MBCircularProgressBar
+    - VYNFCKit
+
+EXTERNAL SOURCES:
+  SwaggerClient:
+    :path: "/Users/mehreen/Desktop/Work space/ODU APP/NFC @7.7.21/NFC Connector/NFC Connector/Vendor"
+
+SPEC CHECKSUMS:
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
+  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
+  GoogleMaps: 82f8fe307193bb4de6ef6bf9e88f1d624b718f9d
+  GooglePlaces: 1b9d29cf3e164903d873600f511f42acdfe85294
+  HCLineChartView: a57d519fc937bc9e17d870d61fca2703d30e1a28
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  SwaggerClient: a81fdad8c5984a20f236990d6a16f0acf5fe48fe
+  VYNFCKit: 86a9b711fd1f34f6f7128a2a883cd58dbd781b9d
+
+PODFILE CHECKSUM: cd87948b662587a3e00866cff7cf3d3db824cc2e
+
+COCOAPODS: 1.11.3

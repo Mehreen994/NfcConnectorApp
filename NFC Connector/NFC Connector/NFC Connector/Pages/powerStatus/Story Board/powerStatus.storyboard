@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Power Status View Controller-->
+        <scene sceneID="fzI-RI-hq5">
+            <objects>
+                <viewController storyboardIdentifier="powerStatus" id="0sb-z1-ULT" customClass="PowerStatusViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="496-Uw-jGG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atE-b7-qar" customClass="HCLineChartView">
+                                <rect key="frame" x="37" y="88" width="377" height="763"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientTopColor">
+                                        <color key="value" red="0.21199381349999999" green="0.48599302770000002" blue="0.66276788710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="chartWithRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartTitle" value="Power Consumption"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chartTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chartAxisColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chartLineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="drawHorizontalLinesForYTicks" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chartLineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="chartLineWithCircles" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showSubtitle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeForSubTitle">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chartSubtitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showYValueAsCurrency" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeForAxis">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Consumption (%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dn-GD-vAL">
+                                <rect key="frame" x="-132" y="454.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Kld-m3-Yab"/>
+                                    <constraint firstAttribute="height" constant="30" id="h3L-hs-WrW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time in seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-EU-kPS">
+                                <rect key="frame" x="75.5" y="851" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HJ7-Hj-GM4"/>
+                                    <constraint firstAttribute="height" constant="30" id="uc3-uu-oY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="atE-b7-qar" firstAttribute="leading" secondItem="496-Uw-jGG" secondAttribute="leading" constant="37" id="0hK-mf-3mK"/>
+                            <constraint firstItem="9Dn-GD-vAL" firstAttribute="leading" secondItem="496-Uw-jGG" secondAttribute="leading" constant="-132" id="8qj-NQ-cLn"/>
+                            <constraint firstItem="9Dn-GD-vAL" firstAttribute="centerY" secondItem="atE-b7-qar" secondAttribute="centerY" id="Ctd-kB-rMr"/>
+                            <constraint firstAttribute="trailing" secondItem="atE-b7-qar" secondAttribute="trailing" id="ECP-Jy-LM7"/>
+                            <constraint firstAttribute="bottom" secondItem="atE-b7-qar" secondAttribute="bottom" constant="45" id="eVP-Cm-zor"/>
+                            <constraint firstItem="KIf-EU-kPS" firstAttribute="centerX" secondItem="atE-b7-qar" secondAttribute="centerX" id="eyI-9d-3eZ"/>
+                            <constraint firstItem="atE-b7-qar" firstAttribute="top" secondItem="2PB-8t-iV9" secondAttribute="top" id="hST-mu-4VP"/>
+                            <constraint firstAttribute="bottom" secondItem="KIf-EU-kPS" secondAttribute="bottom" constant="15" id="loF-2T-B52"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2PB-8t-iV9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HyL-zf-5jP">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="TRC-hY-OaF">
+                            <color key="tintColor" red="0.21199381349999999" green="0.48599302770000002" blue="0.66276788710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="0sb-z1-ULT" id="vFz-vF-Rgm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chartView" destination="atE-b7-qar" id="9uf-hz-ZVT"/>
+                        <outlet property="yaxisLabel" destination="9Dn-GD-vAL" id="GR8-QI-3Lc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWZ-dd-dt1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9aR-QF-0qI">
+            <objects>
+                <navigationController storyboardIdentifier="powerNavigation" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ygb-QK-b3R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RxD-66-Ou4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0sb-z1-ULT" kind="relationship" relationship="rootViewController" id="rfe-bn-au0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2L-sz-Zoj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="13" height="21"/>
+    </resources>
+</document>

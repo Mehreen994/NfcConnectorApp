@@ -1,0 +1,10 @@
+/* 
+  localization.strings
+  NFC Connector
+
+  Created by Mehreen kanwal on 19.09.19.
+  Copyright © 2019 Auguris. All rights reserved.
+*/
+
+"errorReadingTagInfo" = "NFC-Tag identified - product not registered !";
+"errorReadingTagInfoTitle" = "Unregistered Product";
